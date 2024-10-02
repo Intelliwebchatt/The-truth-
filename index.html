@@ -22,6 +22,7 @@
             --background-color: #f2f2f2; /* Soft background */
             --font-main: 'Playfair Display', serif;
             --font-body: 'Roboto', sans-serif;
+            --button-bg-color: #b30000; /* Dark red for more contrast */
         }
 
         body {
@@ -47,7 +48,7 @@
 
         .cta {
             text-align: center;
-            margin: 50px 0;  /* Improved spacing */
+            margin: 50px 0;
         }
 
         .cta h1 {
@@ -72,7 +73,7 @@
         /* Card Hover Effects */
         .features {
             display: flex;
-            gap: 40px;
+            gap: 60px;  /* Increased spacing between cards */
             justify-content: space-between;
             flex-wrap: wrap;
         }
@@ -85,7 +86,9 @@
             text-align: center;
             box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
             margin-bottom: 20px;
-            transition: transform 0.3s, box-shadow 0.3s;
+            transition: transform 0.3s, box-shadow 0.3s, opacity 0.5s ease-in;
+            opacity: 0;
+            animation: fadeInUp 1s forwards ease-in-out;
         }
 
         .feature:hover {
@@ -100,54 +103,5 @@
             color: var(--primary-color);
         }
 
-        footer {
-            background-color: var(--primary-color);
-            color: var(--accent-color);
-            text-align: center;
-            padding: 40px 0;
-        }
-
-        footer p {
-            margin: 0;
-        }
-
-    </style>
-</head>
-
-<body>
-
-    <header>
-    </header>
-
-    <main>
-        <section class="cta">
-            <h1>Intelliai Marketing</h1>
-            <p>Designing Exclusive Digital Solutions for Global Luxury Brands</p>
-            <a href="your-contact-page-url" target="_blank">
-                <img src="https://raw.githubusercontent.com/Intelliwebchatt/The-truth-/refs/heads/main/2024-10-02-11-18-24-126.jpg" alt="Contact our team">
-            </a>
-        </section>
-
-        <section class="features">
-            <div class="feature">
-                <h3>More Than a Website</h3>
-                <p>Art at work: Highly customized to help you stand out and capture attention.</p>
-            </div>
-            <div class="feature">
-                <h3>Interactive Elements</h3>
-                <p>News from your industry, advanced chatbots, and interactive experiences for user engagement.</p>
-            </div>
-            <div class="feature">
-                <h3>Dynamic Industry Insights</h3>
-                <p>Keep your website fresh with dynamic content updates, boosting engagement and SEO.</p>
-            </div>
-        </section>
-    </main>
-
-    <footer>
-        <p>&copy; 2024 Intelliai Marketing | Exclusive Digital Solutions</p>
-    </footer>
-
-</body>
-
-</html>
+        @keyframes fadeInUp {
+            0% {
