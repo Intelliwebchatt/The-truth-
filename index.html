@@ -32,21 +32,22 @@
             padding: 0;
         }
 
+        /* Glossy Gradient for Header */
         header {
-            background: url('https://raw.githubusercontent.com/Intelliwebchatt/The-truth-/refs/heads/main/2024-10-02-06-43-43-452.jpg') no-repeat center center/cover;
-            height: 300px; /* Fixed height */
+            background: linear-gradient(135deg, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.1)), url('https://raw.githubusercontent.com/Intelliwebchatt/The-truth-/refs/heads/main/2024-10-02-06-43-43-452.jpg') no-repeat center center/cover;
+            height: 300px;
             padding: 0;
         }
 
         main {
             max-width: 1200px;
-            margin: 60px auto;
+            margin: 80px auto;
             padding: 0 30px;
         }
 
         .cta {
             text-align: center;
-            margin: 70px 0;
+            margin: 50px 0;  /* Improved spacing */
         }
 
         .cta h1 {
@@ -64,10 +65,11 @@
         .cta img {
             width: 300px;
             height: auto;
-            border-radius: 20px; /* Rounding the edges of the CTA button */
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adding some shadow for effect */
+            border-radius: 20px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Glossy shadow effect */
         }
 
+        /* Card Hover Effects */
         .features {
             display: flex;
             gap: 40px;
@@ -83,6 +85,12 @@
             text-align: center;
             box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
             margin-bottom: 20px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .feature:hover {
+            transform: translateY(-5px); /* Slight lift effect */
+            box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
         }
 
         .feature h3 {
@@ -116,7 +124,7 @@
             <h1>Intelliai Marketing</h1>
             <p>Designing Exclusive Digital Solutions for Global Luxury Brands</p>
             <a href="your-contact-page-url" target="_blank">
-                <img src="    https://raw.githubusercontent.com/Intelliwebchatt/The-truth-/refs/heads/main/2024-10-02-08-34-39-060.jpg   " alt="Contact our team">
+                <img src="https://raw.githubusercontent.com/Intelliwebchatt/The-truth-/refs/heads/main/2024-10-02-07-52-10-001.jpg" alt="Contact our team">
             </a>
         </section>
 
